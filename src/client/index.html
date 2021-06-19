@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Exercise tracker</title>
+  </head>
+  <body>
+    <div class="row h-100" style="padding-left: 20%;padding-right: 0%;background-color: rgb(102, 99, 99);"
+      <div class="col-sm-12 my-auto">
+        <div class="card card-block w-25"><div>
+          <h1>Exercise tracker</h1>
+          <!--Workout-->
+          <div>
+            <h2>Workout</h2>
+            <form method="POST" action="/workout/add">
+              <div class="mb-3">
+                <p>How long it was?(minutes)</p>
+                <input id="duration" type="text" name="duration"></input>
+              </div>
+              <div class="mb-3">
+                How it was?
+                <p></p>
+                <input id="description" type="text" name="description"></input>
+              </div>
+              <div class="mb-3">
+                <p>Put your id here(if you dont know it, consult it below)</p>
+                <input id="authorID" type="text" name="authorID"></input>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-success" type="submit">
+                  Send it
+                </button>
+              </div>
+            </form>
+          </div>
+          <!--Login-->
+          <div>
+            <h2>Login</h2>
+            <form method="POST" action="/login">
+              <div class="mb-3">
+                <p>Your email</p>
+                <input id="email" type="text" name="email"></input>
+              </div>
+              <div class="mb-3">
+                <p>Put your password</p>
+                <input id="password" type="password" name="password"></input>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-success" type="submit">
+                  Send it
+                </button>
+              </div>
+            </form>
+          </div>
+          <!--Signup-->
+          <div>
+            <h2>Sign up</h2>
+            
+            <form method="POST" action="/signup">
+              <div class="mb-3">
+                <p>Your username</p>
+                <input id="username" type="text" name="username"></input>
+              </div>
+              <div class="mb-3">
+                <p>Your email</p>
+                <input id="email" type="text" name="email"></input>
+              </div>
+              <div class="mb-3">
+                <p>Put your password</p>
+                <input id="password" type="password" name="password"></input>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-secondary" type="submit">
+                  Send it
+                </button>
+              </div>
+            </form>
+          </div>
+          
+        </div></div>
+      </div>
+   </div>
+   <footer>Made by Jesus Adrian Flores Arevalo</footer>
+  </body>
+</html>
